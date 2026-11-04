@@ -1,0 +1,21 @@
+# Python packages used by the notebooks and scripts (the analysis was run with Python 3.14).
+# Versions are not pinned; to record the exact environment, run `pip freeze` in it.
+numpy
+scipy
+pandas
+xarray
+netCDF4
+h5py
+matplotlib
+scikit-learn
+joblib
+torch
+psutil
+pyproj
+# figure of the network architecture (scripts/fig_arch_agu_v5.py)
+pillow
+cairosvg
+# notebooks
+jupyter
+# xcroco (from croco_pytools v2.0.4) is not on PyPI: see README.
+# Its own dependencies are listed in croco_pytools-v2.0.4/env.yml.
