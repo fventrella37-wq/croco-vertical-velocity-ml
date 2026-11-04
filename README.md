@@ -21,7 +21,7 @@ Mediterranean and evaluated on two other regions.
 | `notebook_nuredduna_seeds.ipynb` | Training of an ensemble of 274 FiLM networks with different random seeds; ensemble statistics |
 | `notebook_nuredduna_noise.ipynb` | Sensitivity of both models to white Gaussian noise added to the input velocities |
 | `notebook_nuredduna_temporal.ipynb`, `temporal_validation.py` | Evaluation of the models on other snapshots of the simulation and training on summer snapshots (the `.py` file is the script version of the notebook) |
-| `scripts/` | Plotting scripts |
+| `fig_*.py`, `prep.py`, `prep2.py`, `predict.py`, `runcells_agu.py`, `sm_temporal_figures.py`, `agu_style.py`, `paths.py` | Plotting scripts |
 | `cnn_seeds_film/` | Trained FiLM networks, one folder per seed: `config.json`, `model_final.pt` (PyTorch `state_dict`), `history.csv`, `result.json`, validation $R^2$ (`*_r2.csv`); ensemble summaries (`ensemble_*.csv`, `lr_reference.*`); `noise_algerian/` (noise experiment) |
 | `lr_perlevel_run_20261008_174912/` | Per-level linear regression: fitted model (`.pkl`, scikit-learn) and out-of-sample $R^2$ at the 16 target levels |
 | `temporal_validation/`, `temporal_validation_summer_2136/`, `temporal_validation_summer_2360/` | Results of the evaluation on other snapshots (CSV) |
@@ -84,9 +84,9 @@ The trained networks and the results of steps 2–4 are already included.
 
 ### Plotting scripts
 
-The scripts read the CROCO files and the result folders from the repository root, write the
+The plotting scripts are run from the repository root (e.g. `python fig_training_agu.py`). They read the CROCO files and the result folders from the repository root, write the
 figures to `figures_out/` and intermediate files to `cache/`. The three folders can be changed
-with the environment variables `VV_WORKDIR`, `VV_FIGDIR` and `VV_CACHE` (see `scripts/paths.py`).
+with the environment variables `VV_WORKDIR`, `VV_FIGDIR` and `VV_CACHE` (see `paths.py`).
 
 | Script | Output | Needs |
 |---|---|---|

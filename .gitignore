@@ -1,0 +1,14 @@
+# CROCO model output and grid (not distributed with this repository)
+*.nc
+# large intermediate file written by notebook_nuredduna.ipynb (about 120 MB)
+derivate_oceaniche.npz
+# CROCO python tools (download separately, see README)
+croco_pytools-v2.0.4/
+# outputs of the scripts
+cache/
+figures_out/
+# Python / Jupyter / macOS
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
